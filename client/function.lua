@@ -32,7 +32,9 @@ RegisterNetEvent("snow_location:viewTime", function (source)
         time = time - 1
         local minutes = time // 60
         local seconds = time % 60
-        lib.showTextUI((Strings.Notify.remainingTime):format(time))  -- Ajout d'une déclaration de print
+
+        local formatedTime = ("%02d:%02d"):format(minutes, seconds)
+        lib.showTextUI((Strings.Notify.remainingTime):format(formatedTime))
     
         local timer = lib.waitFor(function ()
             if time == 0 or not haveVehicle then
