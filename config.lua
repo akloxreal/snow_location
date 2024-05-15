@@ -11,7 +11,8 @@ ConfigShared.Plate = {
 
 ConfigShared.Locations = {
     ["location_sud"] = {
-        coords = vec3(-112.219772, -1368.778076, 28.431519),
+        coords = vec3(216.619781, -817.200012, 29.577271),
+        ped_heading = 195.070862,
         spawn_coords = vec3(-111.771423, -1372.707642, 29.414673),
         spawn_heading = 280.629913,
         blips = {

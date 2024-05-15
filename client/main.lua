@@ -4,7 +4,7 @@ function SetLocationPoint()
         
         local ped_model = lib.requestModel("a_m_m_business_01", 5000)
 
-        local ped = CreatePed(4, ped_model, Locations.coords.x, Locations.coords.y, Locations.coords.z, 0.0, false, false)
+        local ped = CreatePed(4, ped_model, Locations.coords.x, Locations.coords.y, Locations.coords.z, Locations.ped_heading, false, true)
         SetEntityAsMissionEntity(ped, true, true)
         SetBlockingOfNonTemporaryEvents(ped, true)
         FreezeEntityPosition(ped, true)
