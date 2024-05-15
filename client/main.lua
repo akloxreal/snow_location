@@ -2,7 +2,7 @@ function SetLocationPoint()
     for key, value in pairs(ConfigShared.Locations) do
         Locations = ConfigShared.Locations[key]
         
-        local ped_model = lib.requestModel("a_m_m_business_01", 500)
+        local ped_model = lib.requestModel("a_m_m_business_01", 5000)
 
         local ped = CreatePed(4, ped_model, Locations.coords.x, Locations.coords.y, Locations.coords.z, 0.0, false, false)
         SetEntityAsMissionEntity(ped, true, true)
