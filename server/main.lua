@@ -58,7 +58,6 @@ RegisterServerEvent('snow_location:spawnVehicle', function (source, model, spawn
     })
 
     TriggerClientEvent('snow_location:updateHaveVehicle', source, true)
-
     TriggerClientEvent('snow_location:viewTime', source)
 end)
 function IsValidEntity(entity)
